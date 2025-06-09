@@ -1,0 +1,15 @@
+local Lighting = game:GetService("Lighting")
+
+-- Створюємо ефект атмосфери
+local atmosphere = Instance.new("Atmosphere")
+atmosphere.Parent = Lighting
+
+-- Налаштування параметрів туману
+atmosphere.Density = 0.5 -- Щільність туману (0 - немає туману, 1 - дуже густий туман)
+atmosphere.Offset = 0 -- Зміщення висоти туману
+atmosphere.Color = Color3.fromRGB(200, 200, 200) -- Колір туману (сірий)
+atmosphere.Glare = 0 -- Блиск туману
+atmosphere.Haze = 5 -- Рівень серпанку
+
+print("Туман успішно додано!")
+
